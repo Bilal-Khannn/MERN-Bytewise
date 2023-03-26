@@ -24,7 +24,7 @@
 }
 
 .nav-bar ul li a {
-  display: inline-block;
+  /* display: inline-block; */
   font-weight: bold;
   font-size: 17px;
   padding: 0 15px;
@@ -33,8 +33,10 @@
 
 /* place the logo  */
 .nav-bar .logo {
-  width: 20%;
-  margin-left: 15em;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  margin-left: 25px;
 }
 
 /* design the h4 tag inside logo  */
@@ -49,6 +51,7 @@
   display: flex;
   flex-direction: row;
   height: 300px;
+  max-height: 600px;
   background-color: rgb(32, 46, 247);
 }
 
@@ -80,6 +83,7 @@
   display: flex;
   flex-direction: column;
   width: 40%;
+  max-width: 40%;
 }
 
 .main-body .right-div .right-div-content {
@@ -135,4 +139,10 @@
   font-size: 15px;
   margin: 10px;
   padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+  }
 }
